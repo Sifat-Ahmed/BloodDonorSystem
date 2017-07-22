@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/mainpage"
+    tools:context="blooddonorsystem.nerddevstudio.blooddonorsystem.Register_Activity"
+
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/nameTxt"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        android:id="@+id/ageTxt"
+        android:textAlignment="center"
+        android:layout_below="@+id/nameTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Phone Number"
+        android:id="@+id/phoneNumberTxt"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/ageTxt"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bloodGroupSpinner"
+        android:entries="@array/Blood_Groups"
+        android:textAlignment="center"
+        android:layout_below="@+id/passwordTxt"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:id="@+id/passwordTxt"
+        android:hint="Enter Password"
+        android:textAlignment="center"
+        android:layout_below="@+id/phoneNumberTxt"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:id="@+id/submitBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPersonName"
+        android:hint="Location"
+        android:textAlignment="center"
+        android:ems="10"
+        android:id="@+id/locationText"
+        android:layout_below="@+id/bloodGroupSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
